@@ -1,19 +1,39 @@
 {
-    "products":[
-        {
-            "id":1,
-            "name":"Camisa",
-            "price":59.9
-        },
-        {
-            "id":2,
-            "name":"calça vermelha",
-            "price":90
-        },
-        {
-            "id":3,
-            "name":"Bone aba reta",
-            "price":29.9
-        }
-    ]
+  "products": [
+    {
+      "id": "1",
+      "name": "Camisa",
+      "price": 59.9
+    },
+    {
+      "id": "2",
+      "name": "calça vermelha",
+      "price": 90
+    },
+    {
+      "id": "3",
+      "name": "Bone aba reta",
+      "price": 29.9
+    },
+    {
+      "id": "c554",
+      "name": "",
+      "price": ""
+    },
+    {
+      "id": "8e07",
+      "name": "Pneu ",
+      "price": "60"
+    },
+    {
+      "id": "1a5a",
+      "name": "pamonha ",
+      "price": "12"
+    },
+    {
+      "id": "c154",
+      "name": "teste ",
+      "price": "12"
+    }
+  ]
 }
