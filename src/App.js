@@ -12,7 +12,7 @@ function App() {
 
   // 4 custom hook 
 
-  const {data:items , httpConfig} = useFetch(url);
+  const {data:items , httpConfig ,loading} = useFetch(url);
 
   
 
@@ -58,7 +58,7 @@ function App() {
 
     // 5 - refatorando o post 
     httpConfig(product, "POST");
-    
+
     setName("");
     setPrice("");
   };
@@ -66,13 +66,15 @@ function App() {
   return (
     <div className="App">
       <h1>Lista de Produtos</h1>
-      <ul>
+      {/* 6 - loading  */}
+      {loading && <p>Carregando dados...</p>}
+      {!loading && <ul>
         { items && items.map((product) => (
           <li key={product.id}>
             {product.name} - R$: {product.price}
           </li>
         ))}
-      </ul>
+      </ul>}
 
       <div className="add-product">
         <form onSubmit={handleSubmit}>
